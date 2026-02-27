@@ -1,53 +1,62 @@
-public class Circle {
+/**
+ * The Circle class models a circle with a radius and color.
+ */
+public class Circle { // Save as "Circle.java"
 
-    private double radius;
+    // private instance variable, not accessible from outside this class private
+    // double radius;
     private String color;
+    private double radius;
 
-    // Default constructor
-    public Circle() {
-        radius = 1.0;
-        color = "red";
-    }
-
-    // Constructor radius saja
-    public Circle(double radius) {
-        this.radius = radius;
-        this.color = "red";
-    }
-
-    // Constructor radius dan color
-    public Circle(double radius, String color) {
-        this.radius = radius;
-        this.color = color;
-    }
-
-    // Getter radius
-    public double getRadius() {
-        return radius;
-    }
-
-    // Setter radius
-    public void setRadius(double radius) {
-        this.radius = radius;
-    }
-
-    // Getter color
+    // Getter and setter for color
     public String getColor() {
         return color;
     }
 
-    // Setter color
     public void setColor(String color) {
         this.color = color;
     }
 
-    // Luas lingkaran
-    public double getArea() {
-        return Math.PI * radius * radius;
+    // Setter for radius (added)
+    public void setRadius(double radius) {
+        this.radius = radius;
     }
 
-    @Override
+    // Constructors (overloaded)
+
+    /** Constructs a Circle instance with default value for radius and color */
+    public Circle() { // 1st (default) constructor
+        radius = 1.0;
+        color = "red";
+    }
+
+    /** Constructs a Circle instance with the given radius and default color */
+    public Circle(double r) { // 2nd constructor
+        radius = r;
+        color = "red";
+    }
+
+    /** Constructs a Circle instance with the given radius and color */
+    public Circle(double radius, String color) { // 3rd constructor (added)
+        this.radius = radius;
+        this.color = color;
+    }
+    
+    /** Returns the radius */
+    public double getRadius() {
+        return radius;
+    }
+
+    /** Returns the area of this Circle instance */
+    public double getArea() {
+        return radius * radius * Math.PI;
+    }
+
+    /**
+     * * Return a self-descriptive string of this instance in the form of
+     * Circle[radius=?,color=?]
+     */
     public String toString() {
-        return "Circle[radius=" + radius + ", color=" + color + "]";
+        return "Circle[radius=" + radius + " color=" + color + "]";
     }
 }

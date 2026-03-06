@@ -1,8 +1,15 @@
+//*****************************************
+// Numbers.java
+//
+// Reads an array of integers, sorts them,
+// and prints them in sorted order.
+//*****************************************
+
 import java.util.Scanner;
 
 public class Numbers
 {
-   public static void main(String[] args)
+   public static void main (String[] args)
    {
       Integer[] intList;
       int size;

@@ -1,3 +1,10 @@
+//*****************************************
+// Salesperson.java
+//
+// Represents a salesperson with a first
+// name, last name, and total sales.
+//*****************************************
+
 public class Salesperson implements Comparable
 {
    private String firstName, lastName;

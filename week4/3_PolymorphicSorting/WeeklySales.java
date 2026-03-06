@@ -1,3 +1,10 @@
+//*****************************************
+// WeeklySales.java
+//
+// Sorts the sales staff based on their
+// total sales for the week.
+//*****************************************
+
 public class WeeklySales
 {
    public static void main(String[] args)

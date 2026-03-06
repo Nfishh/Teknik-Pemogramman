@@ -1,8 +1,15 @@
+//*****************************************
+// Strings.java
+//
+// Reads an array of strings, sorts them,
+// and prints them in sorted order.
+//*****************************************
+
 import java.util.Scanner;
 
 public class Strings
 {
-   public static void main(String[] args)
+   public static void main (String[] args)
    {
       String[] strList;
       int size;

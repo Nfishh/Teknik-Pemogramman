@@ -19,5 +19,6 @@ public class GenericsType<T> {
         type1.set(10); // valid and autoboxing support
 
         System.out.println(type1.get());
+        System.out.println(type.get());
     }
 }
